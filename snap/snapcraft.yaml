@@ -12,7 +12,13 @@ parts:
     source: https://github.com/charlie9830/castboardtest.git
     flutter-target: lib/main.dart
 
+architectures:
+  - build-on: arm64
+    run-on: arm64
+  - build-on: amd64
+    run-on: amd64
+
 apps:
   castboardtest:
     command: castboardtest
-    extensions: [flutter-dev]
+    extensions: [flutter-master]
