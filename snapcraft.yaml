@@ -1,0 +1,18 @@
+name: castboardtest
+version: '1.0'
+summary: Super Cool App
+description: Super Cool App that does everything!
+
+confinement: strict
+base: core18
+
+parts:
+  castboardtest:
+    plugin: flutter
+    source: https://github.com/charlie9830/castboardtest.git
+    flutter-target: lib/main.dart
+
+apps:
+  castboardtest:
+    command: castboardtest
+    extensions: [flutter-dev]
