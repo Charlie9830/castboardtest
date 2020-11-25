@@ -14,7 +14,7 @@ parts:
 
 architectures:
   - build-on: amd64
-    run-on: arm64
+    run-on: armhf
 
 apps:
   castboardtest:
