@@ -14,7 +14,7 @@ parts:
 
 architectures:
   - build-on: amd64
-    run-on: armhf
+    run-on: armhf # Raspberry Pi
 
 apps:
   castboardtest:
